@@ -1,0 +1,7 @@
+-- How to find a size of Table in PostgreSQL
+
+SELECT pg_size_pretty(pg_total_relation_size('aircraft')) AS total_size;
+
+-- How to find a size of Database in PostgreSQL
+
+SELECT pg_size_pretty(pg_database_size('flight_repository')) AS database_size;
